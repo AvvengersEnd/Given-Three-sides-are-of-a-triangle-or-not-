@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    int a,b,c;
+    printf("Enter the number a:");
+    scanf("%d",&a);
+    printf("Enter the number b:");
+    scanf("%d",&b);
+    printf("Enter the number c:");
+    scanf("%d",&c);
+    // Check the triangle inequality condition (the sum of any two sides is strictly greater than the third side) below
+    if(a + b > c && b + c > a && a + c > b){
+        printf("The sides are of a triangle ");
+    }
+    else{
+        printf("The sides are not of a triangle");
+    }
+    return 0;
+}
